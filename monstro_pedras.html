@@ -6,10 +6,12 @@
 		<link rel="stylesheet" href="estilizando.css">
 	</head>
 	<body>
-	<form action="http://terrivel.herokuapp.com/monster">
-		<label>Nome do Monstrengo:<input type="text" id="nomemonstro"</label><br>
-		<label>Número de Pedras:<input id="numeropedras"></label><br>
-		<label>Tamanho das Pedras:<input id="tamanhopedras"></label><br>
+	<form action="http://terrivel.herokuapp.com/monster" method="GET">
+	<fieldset>
+		<legend>FORMULÁRIO</legend>
+		<label>Nome do Monstrengo:<input type="text" name="nome" pattern="[a-z\s]+$"></label><br>
+		<label>Número de Pedras:<input type="number" min="0" step="1" name="numeropedras" required="required" pattern="[0-9]+$"></label><br>
+		<label>Tamanho das Pedras:<input type="number" name="tamanhopedras" min="1" max="7" step="0.5" required="required" pattern="[0-9]+$"></label><br>
 		<label>Cor do Ceu 1:<input type="color" name="corCeu1"></label><br>
 		<label>Cor do Ceu 2:<input type="color" name="corCeu2"></label><br>
 		<label>Tipo de Pedra:
@@ -26,7 +28,8 @@
 				<option value="nao">Não</option>
 			</select>
 		</label><br>
-		<input type="submit" required value="Enviar Pedido">
+		</fieldset>
+		<input type="submit" required="required" value="Enviar Pedido">
 	</form>
 	</body>
 </html>
