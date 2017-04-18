@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Monstro comedor de pedra</title>
+		<link rel="stylesheet" href="estilizando.css">
+	</head>
+	<body>
+	<form action="http://terrivel.herokuapp.com/monster">
+		<label>Nome do Monstrengo:<input type="text" id="nomemonstro"</label><br>
+		<label>Número de Pedras:<input id="numeropedras"></label><br>
+		<label>Tamanho das Pedras:<input id="tamanhopedras"></label><br>
+		<label>Cor do Ceu 1:<input type="color" name="corCeu1"></label><br>
+		<label>Cor do Ceu 2:<input type="color" name="corCeu2"></label><br>
+		<label>Tipo de Pedra:
+			<select>
+				<option>Marroada</option>
+				<option>Ametista</option>
+				<option>Topazio</option>
+				<option>Espinela</option>
+			</select>
+		</label><br>
+		<label>Pedras Sortidas?
+			<select>
+				<option value="sim">Sim</option>
+				<option value="nao">Não</option>
+			</select>
+		</label><br>
+		<input type="submit" required value="Enviar Pedido">
+	</form>
+	</body>
+</html>
